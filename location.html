@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <!-- Include Google Maps API script -->
+    <script src="https://maps.googleapis.com/maps/api/jsdd?key=AIzaSyAcwwn5CUnb0hQf7_U7mPgkxgUNGvC0ZV8&callback=initMap" async defer></script>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dustbin Location</h1>
+    <div id="map"></div>
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // Specify the coordinates of the dustbin
+            var dustbinLocation = {lat: 51.5074, lng: -0.1278}; // Example coordinates for London, UK
+
+            // Create a map centered at the dustbin location
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12, // Adjust the zoom level as needed
+                center: dustbinLocation
+            });
+
+            // Add a marker at the dustbin location
+            var marker = new google.maps.Marker({
+                position: dustbinLocation,
+                map: map
+            });
+        }
+    </script>
+    <p>
+                . <center><a href="monitoring.html"><button>Back</button></a></center>
+              </p>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring</title>
+    <link rel="stylesheet" href="hm.css">
+    <style>
+body {
+  background-image: url('garb.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+/* Additional CSS for dashboard */
+.dashboard {
+    position: fixed;
+    top: 0;
+    left: -200px; /* Initially hide the dashboard */
+    width: 200px;
+    height: 1000%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    transition: left 0.3s ease; /* Add transition for smooth animation */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth effect */
+}
+
+.dashboard-item {
+    margin-bottom: 20px;
+}
+
+.logout {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Add transition for smooth icon movement */
+}
+
+.menu-icon:hover {
+    transform: scale(1.1); /* Add hover effect to icon */
+}
+</style>
+
+</head>
+<body>
+    <!-- Menu icon for opening dashboard -->
+    <div class="menu-icon" onclick="toggleDashboard()">
+        <img src="menu-icon.png" alt="Menu">
+    </div>
+    
+
+    <div class="dashboard">
+    <div class="dashboard-item">
+            <h3><a href="profile.html">Profile</a></h3>
+        </div>
+
+        <div class="dashboard-item">
+            <h3><a href="garbage.html">Garbage Level</a></h3>
+        </div>
+        <div class="dashboard-item">
+            <h3><a href="location.html">Location</a></h3>
+        </div>
+    </div>
+
+    <div class="banner">
+        <center>
+            <div class="heading">
+                <h1>SMART GARBAGE MONITORING SYSTEM USING IOT</h1>
+                <h2>WELCOME TO ADMIN PORTAL</h2>
+            </div>
+            <div><h2><center>Monitoring</center></h2></div>
+        </center>
+    </div>
+
+    <div class="hero">
+        <nav>
+            <ul>
+                <li><a href="hm.html" class="logout">Back</a></li>
+            </ul>
+        </nav>
+            </div>
+           
+
+    <!-- Other HTML content -->
+
+    <script>
+        function toggleDashboard() {
+            const dashboard = document.querySelector('.dashboard');
+            if (dashboard) {
+                const currentLeft = parseInt(window.getComputedStyle(dashboard).left);
+                dashboard.style.left = currentLeft === 0 ? '-200px' : '0';
+            }
+        }
+
+        // Function to update dust level on the page
+        async function updateDustLevel() {
+            const dustLevelElement = document.getElementById('dust-level');
+            if (dustLevelElement) {
+                // Simulating fetching data
+                const dustLevel = await new Promise((resolve) => {
+                    setTimeout(() => {
+                        // Simulated dust level
+                        const dustLevel = Math.floor(Math.random() * 101); // Random number between 0 and 100
+                        resolve(dustLevel);
+                    }, 2000); // Simulated delay of 2 seconds
+                });
+                dustLevelElement.textContent = `${dustLevel}%`;
+            }
+        }
+
+        // Initial call to update dust level
+        updateDustLevel();
+
+        // Setting interval to periodically update dust level
+        setInterval(updateDustLevel, 5000); // Update dust level every 5 seconds (5000 milliseconds)
+        
+    </script>
+    
+
+
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>
+    <center class="copyright"><p>Copyright © 2023 AUTOMATIC GARBAGE ALERTING SYSTEM! TechTonic'24 Project. All Rights are reserved</p></center>
+    </div>
+
+
+</html>

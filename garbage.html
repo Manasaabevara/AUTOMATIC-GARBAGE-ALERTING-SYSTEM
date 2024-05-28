@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garbage Level</title>
+    <link rel="stylesheet" href="hm.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure content takes at least full viewport height */
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            background-color: #f0f0f0; /* Light background color */
+        }
+
+        /* Add your CSS styles here */
+        .container {
+            text-align: center; /* Center text */
+            margin-bottom: 50px; /* Add space between garbage level and footer */
+        }
+
+        .copyright {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f0f0f0; /* Light background color */
+            padding: 10px 0; /* Add padding top and bottom */
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <center>
+            <div class="heading">
+                <h1>Garbage Level</h1>
+            </div>
+        </center>
+    </div>
+
+    <div class="container">
+        <div class="garbage-level">
+            <h2>Garbage Level: <span id="garbage-level">Loading...</span></h2>
+        </div>
+    </div>
+
+    <script>
+        // Function to fetch garbage level data
+        async function fetchGarbageLevel() {
+            // Simulating fetching data
+            const garbageLevel = await new Promise((resolve) => {
+                setTimeout(() => {
+                    // Simulated garbage level
+                    const garbageLevel = Math.floor(Math.random() * 101); // Random number between 0 and 100
+                    resolve(garbageLevel);
+                }, 2000); // Simulated delay of 2 seconds
+            });
+            return garbageLevel;
+        }
+
+        // Function to update garbage level on the page
+        async function updateGarbageLevel() {
+            const garbageLevelElement = document.getElementById('garbage-level');
+            if (garbageLevelElement) {
+                const garbageLevel = await fetchGarbageLevel();
+                garbageLevelElement.textContent = `${garbageLevel}%`;
+            }
+        }
+
+        // Initial call to update garbage level
+        updateGarbageLevel();
+
+        // Setting interval to periodically update garbage level
+        setInterval(updateGarbageLevel, 5000); // Update garbage level every 5 seconds (5000 milliseconds)
+    </script>
+
+    <div>
+        <center class="copyright"><p>Copyright © 2023 AUTOMATIC GARBAGE ALERTING SYSTEM! TechTonic'24 Project. All Rights are reserved</p></center>
+    </div>
+    <p>
+                . <center><a href="monitoring.html"><button>Back</button></a></center>
+              </p>
+
+</body>
+</html>
