@@ -1,10 +1,5 @@
 # Smart Garbage Monitoring System Using IOT
 
- 
-![GitHub](https://img.shields.io/github/license/hegdepavankumar/smart-garbage-monitoring-system-using-iot?style=flat)
-![GitHub top language](https://img.shields.io/github/languages/top/hegdepavankumar/smart-garbage-monitoring-system-using-iot?style=flat)
-![GitHub last commit](https://img.shields.io/github/last-commit/hegdepavankumar/smart-garbage-monitoring-system-using-iot?style=flat)
-![ViewCount](https://views.whatilearened.today/views/github/hegdepavankumar/smart-garbage-monitoring-system-using-iot.svg?cache=remove)
 
 ## Overview
 
@@ -431,27 +426,9 @@ Contributions are what make the open-source community such an amazing place to l
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 
-## Creators [🔝](# smart-garbage-monitoring-system-using-iot)
+## Creators [🔝](# AUTOMATIC-GARBAGE-ALERTING-SYSTEM)
 
 This Project is Created by:-
 
-  - [Pavankumar Hegde](https://github.com/hegdepavankumar) [Team Leader]
-  - [Sushil Kumar Sah](https://github.com/sushilsah)
-  - [Safina Fathima](https://github.com/safinafab)
-  - [Santhosh Reddy](https://github.com/)
-
-
-
-<br>
-<h3 align="center">Show some &nbsp;❤️&nbsp; by starring some of the repositories!</h3>
-<br>
-
-
- <!-- Support Me --> 
-
- 
-if you like what I do, maybe consider buying me a coffee 🥺👉👈
-
-<a href="https://www.buymeacoffee.com/hegdepavankumar" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="150" ></a>
-
+  - [Bevara Manasa](https://github.com/Manasaabevara) 
 
