@@ -420,7 +420,7 @@ void loop()
 During the development of this project, several constraints have been identified. Firstly, the sensor readings exhibit reduced accuracy, necessitating careful handling to ensure reliable data collection. Secondly, sending notifications to mobile phones is not feasible, as the open-source cloud platform being utilized does not support user alerts or notifications. Therefore, meticulous development practices must be implemented to minimize potential errors. To enhance system reliability, normalization techniques are being applied to remove outliers, thereby improving the accuracy of distance measurements obtained from the ultrasonic sensors. This added value ensures more consistent and dependable sensor performance.
   
 
-## Creators [🔝](# AUTOMATIC-GARBAGE-ALERTING-SYSTEM)
+## Creators (# AUTOMATIC-GARBAGE-ALERTING-SYSTEM)
 
 This Project is Created by:-
 
