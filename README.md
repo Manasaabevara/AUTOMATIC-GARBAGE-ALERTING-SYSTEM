@@ -1,4 +1,4 @@
-# Smart Garbage Monitoring System Using IOT
+# AUTOMATIC GARBAGE ALERTING SYSTEM
 
 
 ## Overview
